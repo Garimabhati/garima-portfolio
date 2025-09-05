@@ -1,25 +1,51 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Garima Bhati — DevOps Engineer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <!-- AOS animations CSS -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-</head>
 <body>
-  <!-- ===== Your page sections go here (Home, About, Skills, Projects, Contact) ===== -->
+  <!-- Header -->
+  <header>
+    <h1>Garima Bhati — DevOps Engineer</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-  <!-- ===== Scripts at bottom in correct order ===== -->
-  <!-- AOS animations -->
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a DevOps Engineer passionate about automation, cloud, and CI/CD pipelines...</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>AWS, Docker, Kubernetes</li>
+      <li>CI/CD with Jenkins & GitHub Actions</li>
+      <li>Linux, Shell Scripting</li>
+    </ul>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <p>Details of your DevOps projects go here.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <input type="text" name="from_name" placeholder="Your Name" required>
+      <input type="email" name="from_email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Scripts -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-  <!-- ✅ EmailJS library (must be before script.js) -->
   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-
-  <!-- Your custom JS -->
   <script src="script.js"></script>
 </body>
-</html>
+
