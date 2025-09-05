@@ -1,17 +1,16 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Garima Bhati — DevOps Engineer</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <!-- AOS animations CSS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
   <!-- Header -->
-  <header>
+  <header data-aos="fade-down">
     <h1>Garima Bhati — DevOps Engineer</h1>
     <nav>
       <a href="#about">About</a>
@@ -21,44 +20,69 @@
     </nav>
   </header>
 
+  <!-- Hero Section -->
+  <section id="hero" class="hero" data-aos="zoom-in">
+    <h2>Hi, I'm Garima 👋</h2>
+    <p>Passionate about Automation, Cloud, and CI/CD Pipelines</p>
+    <a href="#contact" class="btn">Hire Me</a>
+  </section>
+
   <!-- About Section -->
-  <section id="about">
+  <section id="about" data-aos="fade-right">
     <h2>About Me</h2>
-    <p>I am a DevOps Engineer passionate about automation, cloud, and CI/CD pipelines...</p>
+    <p>I am a DevOps Engineer who loves solving problems with automation, cloud infrastructure, and modern DevOps practices. My goal is to bridge development and operations seamlessly.</p>
   </section>
 
   <!-- Skills Section -->
-  <section id="skills">
+  <section id="skills" data-aos="fade-left">
     <h2>Skills</h2>
-    <ul>
-      <li>AWS, Docker, Kubernetes</li>
-      <li>CI/CD with Jenkins & GitHub Actions</li>
-      <li>Linux, Shell Scripting</li>
-    </ul>
+    <div class="skills-grid">
+      <div class="skill-card">AWS</div>
+      <div class="skill-card">Docker</div>
+      <div class="skill-card">Kubernetes</div>
+      <div class="skill-card">Jenkins</div>
+      <div class="skill-card">GitHub Actions</div>
+      <div class="skill-card">Linux</div>
+    </div>
   </section>
 
   <!-- Projects Section -->
-  <section id="projects">
+  <section id="projects" data-aos="fade-up">
     <h2>Projects</h2>
-    <p>Details of your DevOps projects go here.</p>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>CI/CD Pipeline</h3>
+        <p>Designed and implemented automated pipelines using Jenkins and GitHub Actions.</p>
+      </div>
+      <div class="project-card">
+        <h3>Cloud Infra</h3>
+        <p>Deployed scalable infrastructure on AWS with Docker and Kubernetes.</p>
+      </div>
+    </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact">
+  <section id="contact" data-aos="fade-up">
     <h2>Contact Me</h2>
     <form id="contact-form">
       <input type="text" name="from_name" placeholder="Your Name" required>
       <input type="email" name="from_email" placeholder="Your Email" required>
       <textarea name="message" placeholder="Message" required></textarea>
-      <button type="submit">Send</button>
+      <button type="submit" class="btn">Send</button>
     </form>
   </section>
 
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Garima Bhati | <a href="resume.pdf" target="_blank">Download Resume</a></p>
+  </footer>
+
   <!-- Scripts -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <!-- ✅ EmailJS library -->
   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-  <!-- Your custom JS -->
   <script src="script.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
