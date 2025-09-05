@@ -1,16 +1,24 @@
-emailjs.init("UID0hzkQSqi7j4MmL"); // your Public Key
+// Initialize AOS animations
+AOS.init({ duration: 700, once: true });
+
+// Initialize EmailJS with your Public Key
+emailjs.init("UID0hzkQSqi7j4MmL");
 
 function sendMessage(e) {
   e.preventDefault();
+
+  // Get form values
   const name = document.querySelector("[name='from_name']").value.trim();
   const email = document.querySelector("[name='from_email']").value.trim();
   const message = document.querySelector("[name='message']").value.trim();
 
+  // Validate inputs
   if (!name || !email || !message) {
     alert("⚠️ Please fill in all fields");
     return false;
   }
 
+  // Send email using EmailJS
   emailjs.send("service_egwcfdk", "template_mv8fg68", {
     from_name: name,
     from_email: email,
