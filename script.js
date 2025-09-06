@@ -33,3 +33,15 @@ function sendMessage(e) {
 
   return false;
 }
+// Open certificate modal
+function openCertificate(fileUrl) {
+  document.getElementById("certificateFrame").src = fileUrl;
+  document.getElementById("certificateModal").style.display = "flex";
+}
+
+// Close certificate modal
+function closeModal() {
+  document.getElementById("certificateModal").style.display = "none";
+  document.getElementById("certificateFrame").src = "";
+}
+
